@@ -7,7 +7,7 @@
         <shape android:shape="rectangle">
 
             <!-- view background color -->
-            <solid android:color="@color/blue_text"></solid>
+            <solid android:color="@color/colorPrimary"></solid>
 
             <!-- Here is the corner radius -->
             <corners android:radius="8dp"></corners>

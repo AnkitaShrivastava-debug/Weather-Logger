@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.ankita.weatherlogger.R;
 import com.ankita.weatherlogger.models.WeatherResponses;
+import com.ankita.weatherlogger.utils.GifImageView;
 import com.ankita.weatherlogger.viewmodels.WeatherListViewModel;
 import com.bumptech.glide.Glide;
 
@@ -19,7 +20,7 @@ import java.util.List;
 public class DetailActivity extends AppCompatActivity {
 
     TextView tvTemp,tvRain,tvSky,tvHumidity,tv_temperature,tvDate,tvVisibility,tvPressure;
-    ImageView imgTemp;
+    GifImageView imgTemp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,9 +60,33 @@ public class DetailActivity extends AppCompatActivity {
                     tvHumidity.setText("Humidity : "+weatherResponses.getMain().getHumidity() + "%");
                     tvPressure.setText("Pressure : "+weatherResponses.getMain().getPressure());
                     tvVisibility.setText("Visibility : "+weatherResponses.getVisibility());
-                    Glide.with(DetailActivity.this)
+                    if(weatherResponses.getResults().get(0).getDescription().contains("clear")){
+                        imgTemp.setGifImageResource(R.drawable.clear_sky);
+                    }
+                    if(weatherResponses.getResults().get(0).getDescription().contains("few clouds")){
+                        imgTemp.setGifImageResource(R.drawable.fewclouds);
+                    }
+                    if(weatherResponses.getResults().get(0).getDescription().contains("scattered")){
+                        imgTemp.setGifImageResource(R.drawable.scattered);
+                    }
+                    if(weatherResponses.getResults().get(0).getDescription().contains("overcast")){
+                        imgTemp.setGifImageResource(R.drawable.scattered);
+                    }
+                    if(weatherResponses.getResults().get(0).getDescription().contains("rain")){
+                        imgTemp.setGifImageResource(R.drawable.shower_rain);
+                    }
+                    if(weatherResponses.getResults().get(0).getDescription().contains("thunderstorm")){
+                        imgTemp.setGifImageResource(R.drawable.thunder);
+                    }
+                    if(weatherResponses.getResults().get(0).getDescription().contains("snow")){
+                        imgTemp.setGifImageResource(R.drawable.snow);
+                    }
+                    if(weatherResponses.getResults().get(0).getDescription().contains("mist") || weatherResponses.getResults().get(0).getDescription().contains("smoke")){
+                        imgTemp.setGifImageResource(R.drawable.mist);
+                    }
+                  /*  Glide.with(DetailActivity.this)
                             .load("http://openweathermap.org/img/wn/"+weatherResponses.getResults().get(0).getIcon() + "@2x.png")
-                            .into(imgTemp);
+                            .into(imgTemp);*/
                 }
             }
         });

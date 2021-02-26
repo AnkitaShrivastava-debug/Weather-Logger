@@ -75,7 +75,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:visibility="gone"
         android:paddingTop="30dp"
-        android:background="@color/light_purple"
+        android:background="@color/white"
         android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
