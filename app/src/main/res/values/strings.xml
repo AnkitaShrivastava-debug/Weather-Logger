@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather Logger</string>
+    <string name="api_key">3652ac0c5ddfe3b80e1dedf590a20d03</string>
+    <string name="save_loc">Allow saving your location</string>
+    <string name="message">Do you wish to save your location automatically or manually?</string>
+    <string name="enter_manually">Manually</string>
+    <string name="auto">Automatically</string>
+    <string name="manual_title">Please enter the name of the city</string>
+    <string name="manual_desc">This will allow you to save data from another location</string>
+    <string name="city_name">City Name</string>
+    <string name="save">Save</string>
+    <string name="main_text">"Now you can easily store the details of the weather of your location in just either by clicking the below button or the one at the top right corner on the toolbar. "</string>
+    <string name="main_description">You can save the location based on the weather data either by clicking the below button or the one at the top right corner on the toolbar</string>
+    <string name="added">Added Locations</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

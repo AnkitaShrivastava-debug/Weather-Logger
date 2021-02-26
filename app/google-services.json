@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "102986475159",
+    "project_id": "weather-cc6b1",
+    "storage_bucket": "weather-cc6b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102986475159:android:f686051e7cd7689a142bd2",
+        "android_client_info": {
+          "package_name": "com.ankita.weather"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102986475159-c3g4iip5me4e1s8qsg2q62csj81v94ik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwbJQSSwUQKTOy-dW1UOoBk90GBhat-xU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102986475159-c3g4iip5me4e1s8qsg2q62csj81v94ik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
