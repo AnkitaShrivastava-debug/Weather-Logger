@@ -30,7 +30,7 @@
         tools:ignore="MissingConstraints"
       />
 -->
-    <com.ankita.weatherlogger.utils.GifImageView
+    <com.ankita.weather.utils.GifImageView
         android:id="@+id/img_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
